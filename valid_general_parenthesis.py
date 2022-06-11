@@ -24,24 +24,24 @@ def matches(open, close):
 
 class Solution:
     def isValid(self, s: str) -> bool:
-        stacks = Stack()
+        stack = Stack()
         balance = True
         index = 0
 
         while index < len(s) and balance:
             symbol = s[index]
             if symbol in '([{':
-                stacks.push(symbol)
+                stack.push(symbol)
             else:
-                if stacks.is_empty():
+                if stack.is_empty():
                     balance = False
                 else:
-                    top = stacks.pop()
+                    top = stack.pop()
                     if not matches(top, symbol):
                         balance = False
 
             index = index + 1
-        if balance and stacks.is_empty():
+        if balance and stack.is_empty():
             return True
         else: 
             return False
