@@ -20,7 +20,7 @@ class Deque:
 def palchecker(aString):
     chardeque = Deque()
 
-    chars = "``,.;:!@#$%^&*()-_+='/<>[]{()}|~\"?"
+    chars = "`,.;:!@#$%^&*()-_+='/<>[]{()}|~\"?"
 
     for ch in aString:
         if ch in chars:
