@@ -1,6 +1,3 @@
-from sys import prefix
-
-
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         res = [1] * (len(nums))
