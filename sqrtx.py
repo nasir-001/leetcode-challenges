@@ -6,4 +6,3 @@ class Solution:
 
 obj = Solution()
 print(obj.mySqrt(8))
-
