@@ -9,4 +9,4 @@ class Solution:
                 return [prevMap[diff]+1, i+1]
             prevMap[n] = i
             
-        return
+        return 
