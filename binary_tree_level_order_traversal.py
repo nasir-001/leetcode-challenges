@@ -20,8 +20,8 @@ class Solution:
                 node = q.popleft()
                 if node:
                     level.append(node.val)
-                    q.append(node.right)
                     q.append(node.left)
+                    q.append(node.right)
 
             if level:
                 result.append(level)
