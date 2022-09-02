@@ -21,6 +21,6 @@ class Currency:
         for i in range(len(dp)):
             for c in self.denominations:
                 if i - c >= 0:
-                    dp[i] = min(dp[i], dp[1-c] + 1)
+                    dp[i] = min(dp[i], dp[i-c] + 1)
 
         return dp[-1]
