@@ -43,5 +43,6 @@ function parseCSV(input, separator, quote) {
         }
       }
     }
-
+    pushRow()
+    return data
 }
